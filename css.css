@@ -535,6 +535,7 @@ nav .wrapper {
   
   @media (max-width: 567px) {
     .hero .row .content {
+      bottom: 5rem;
       left: 20px;
     }
   
@@ -544,7 +545,13 @@ nav .wrapper {
     .hero .row .content p {
       width: 80%;
     }
+
+    .hero .arrows{
+      margin-top: 7rem;
+    }
   }
+
+
   
   /* PROMOTION */
   .section {
@@ -1411,4 +1418,35 @@ nav .wrapper {
       grid-template-columns: 1fr;
       gap: 4rem 0;
     }
+}
+
+
+.scroll-up{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: 9999;
+  transition: 1.5s;
+}
+
+.scrollup:hover{
+  color: var(--primary-alt);
+}
+
+.scrollup__icon{
+  font-size: 3rem;
+  color: var(--primary-alt);
+  transition: .5s ease-in-out;
+}
+
+.scrollup__icon:hover{
+  color: var(--primary);
+
+}
+
+/*SHOWSCROLL*/
+.show-scroll{
+  bottom: 3rem;
 }
